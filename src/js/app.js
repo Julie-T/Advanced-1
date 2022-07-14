@@ -1,17 +1,17 @@
 // TODO: write your code here
 
 export default function orderByProps(obj, [...key]) {
+  const arrOfObj = [];
   for (const prop in obj) {
     if (prop === key) {
       const newObj = {
         key: this.key,
         value: this.obj[prop],
       };
-      return {
-        ...newObj,
-      };
+      arrOfObj.push(newObj);
     }
   }
+  return arrOfObj;
 }
 
 const hero = {

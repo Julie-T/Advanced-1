@@ -6,7 +6,9 @@ test('Вывод свойств объекта', () => {
   };
 
   expect(orderByProps(hero, ['name', 'health'])).toEqual(
-    { key: 'name', value: 'мечник' },
-    { key: 'health', value: 10 },
+    [
+      { key: 'name', value: 'мечник' },
+      { key: 'health', value: 10 },
+    ],
   );
 });
